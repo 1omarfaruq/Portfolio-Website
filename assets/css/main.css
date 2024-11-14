@@ -568,6 +568,13 @@ body{
   color: hsl(209 87% 21% / var(--tw-text-opacity));
 }
 
+body:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 100% 4% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
 .container{
   width: 100%;
   margin-right: auto;
@@ -840,6 +847,10 @@ body{
   display: none;
 }
 
+.w-10{
+  width: 2.5rem;
+}
+
 .w-\[this-is\\\\\]{
   width: this-is\\;
 }
@@ -850,10 +861,6 @@ body{
 
 .w-\[weird-and-invalid\]{
   width: weird-and-invalid;
-}
-
-.w-10{
-  width: 2.5rem;
 }
 
 .flex-shrink{
@@ -914,6 +921,10 @@ body{
 
 .transform-none{
   transform: none;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .touch-auto{
@@ -2492,6 +2503,10 @@ body{
   }
 }
 
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
@@ -2520,10 +2535,8 @@ body{
   }
 }
 
-@media (prefers-color-scheme: dark){
-  @media (min-width: 976px){
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
-      paint-order: markers;
-    }
+@media (min-width: 976px){
+  .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.dark *){
+    paint-order: markers;
   }
 }

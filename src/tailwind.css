@@ -10,6 +10,6 @@
     }
 
     body {
-        @apply text-primaryColor font-poppins tracking-wider overflow-x-hidden;
+        @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wider overflow-x-hidden;
     }
 }
