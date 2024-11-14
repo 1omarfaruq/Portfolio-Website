@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My portfolio website by Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/main.css --watch"
+  },
+  "author": "Md. Omar Faruq Serniabat (OFS)",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
