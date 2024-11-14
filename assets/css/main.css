@@ -556,6 +556,18 @@ video {
   display: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: hsl(209 87% 21% / var(--tw-text-opacity));
+}
+
 .container{
   width: 100%;
   margin-right: auto;
