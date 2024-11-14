@@ -677,12 +677,20 @@ body{
   inset-inline-end: 0.25rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
 
 .isolation-auto{
   isolation: auto;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .float-start{
@@ -842,6 +850,10 @@ body{
 
 .w-\[weird-and-invalid\]{
   width: weird-and-invalid;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .flex-shrink{
@@ -2376,6 +2388,10 @@ body{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .ease-in{
