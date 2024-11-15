@@ -69,77 +69,93 @@
     </header>
     <!-- End Header -->
 
-    <!-- Begin Hero Section -->
-    <section id="hero">
-        <!-- blob -->
-        <div></div>
 
-        <div>
+
+    <!-- Begin Hero Section -->
+    <section id="hero" class="relative py-5">
+        <!-- Blob gradient effects right top position-->
+        <div class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+        <div class="container">
             <!-- BG Image -->
-            <div>
-                <p>hi</p>
+            <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation">
+                <p class="font-Londrina text-[400px] text-primaryColorLight uppercase -z-10 opacity-5 lg:text-[450px]">hi</p>
             </div>
 
             <!-- Begin Hero Content -->
-            <div>
-                <div>
-                    <h3>I am Omar Faruq</h3>
+            <div class="flex items-center gap-5">
+                <!-- Small view image -->
+                <div class="space-y-2 md:w-1/2">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">I am Omar Faruq</h3>
                     <h1>
-                        <span>Web Developer +</span>
+                        <span class="title">Web Developer +</span>
                         <br>
-                        <span>UX Designer</span>
+                        <span class="title">UX Designer</span>
                     </h1>
 
-                    <div>
-                        <!-- bolb -->
-                        <div></div>
+                    <div class="relative flex justify-center md:hidden">
+                        <!-- Blob gradient effects left bottom position-->
+                        <div class="absolute left-0 bottom-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
 
-                        <img src="./assets/images/person.jpg" alt="Person Image">
+                        <img src="./assets/images/person.jpg" alt="Person Image" class="my-10 max-w-[90%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:bg-primaryColorLight">
                     </div>
 
-                    <p>
+                    <p class="max-w-xl text-xl pb-5">
                         I dissect intricate user experience issues of craft solutions focuseds on integrity, linking billions of individuals.
                     </p>
 
-                    <div>
-                        <button>
+                    <div class="flex items-center flex-wrap gap-5">
+                        <button class="btn-outline">
                             Download CV <i class="fa-solid fa-download"></i>
                         </button>
 
-                        <div>
-                            <div>
+                        <div class="flex items-center gap-5">
+                            <div class="social-icon">
                                 <i class="fa-brands fa-twitter z-10"></i>
                             </div>
-                            <div>
+                            <div class="social-icon">
                                 <i class="fa-brands fa-linkedin-in z-10"></i>
                             </div>
-                            <div>
+                            <div class="social-icon">
                                 <i class="fa-brands fa-youtube z-10"></i>
                             </div>
-                            <div>
+                            <div class="social-icon">
                                 <i class="fa-brands fa-github z-10"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Large view hero -->
+                <div class="relative hidden md:w-1/2 md:flex justify-center ">
+                    <!-- Blob gradient effects left bottom position-->
+                    <div class="absolute left-0 bottom-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                    <img src="./assets/images/person.jpg" alt="Person Image" class="my-10 md:w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:bg-primaryColorLight">
+                </div>
             </div>
             <!-- End Hero Content -->
 
             <!-- Begin Hero Footer -->
-            <div>
-                <div>
-                    <p>12</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">12</p>
                     <p>Years of <br> Experience</p>
                 </div>
                 
-                <div>
-                    <p>50+</p>
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">50+</p>
                     <p>Project <br> Completed</p>
                 </div>
                 
-                <div>
-                    <p>1.5K</p>
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">1.5K</p>
                     <p>Happy <br> Clients</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">12</p>
+                    <p>Years of <br> Experience</p>
                 </div>
             </div>
             <!-- End Hero Footer -->

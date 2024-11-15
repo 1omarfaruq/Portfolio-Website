@@ -23,6 +23,14 @@ module.exports = {
         whiteColor: "#fff",
         textColor: "#ddd",
         secondaryColor: "red",
+      },
+      keyframes: {
+        move: {
+          "50%": {transform: "scale(1:1)"}
+        },
+      },
+      animation: {
+        scaleAnimation: "move 3s liner infinite"
       }
     },
     container: {
