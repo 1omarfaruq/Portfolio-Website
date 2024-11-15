@@ -30,15 +30,15 @@
     <header id="navbar" class="sticky top-0 z-50 duration-300">
         <nav class="relative container flex justify-between items-center">
             <!-- Begin Logo -->
-            <div>
-                <img src="./assets/images/logo.png" alt="Logo" class="w-10">
-                <img src="./assets/images/logo_white.png" alt="White logo" class="w-10">
+            <div class="py-5">
+                <img src="./assets/images/logo.png" alt="Logo" class="w-10 md:w-14 dark:hidden">
+                <img src="./assets/images/logo_white.png" alt="White logo" class="w-10 md:w-14 hidden dark:inline-block">
             </div>
             <!-- End Logo -->
 
             <!-- Begin Navmenu -->
-            <div id="nav-menu">
-                <ul>
+            <div id="nav-menu" class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+                <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
                     <li><a href="#quality_services" class="nav-link">Services</a></li>
                     <li><a href="#recent_work" class="nav-link">Works</a></li>
                     <li><a href="#exp_edu" class="nav-link">Resume</a></li>
@@ -46,25 +46,25 @@
                     <li><a href="#blogs" class="nav-link">Blogs</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <li>
-                        <button>
-                            <span>Hire Me!</span>
+                        <button class="btn ml-10">
+                            <span class="z-10">Hire Me!</span>
                         </button>
                     </li>
                 </ul>
 
-                <div id="nav-close">
+                <div id="nav-close" class="absolute top-6 right-3 text-whiteColor text-3xl cursor-pointer md:right-8 lg:hidden">
                     <i class="ri-close-line"></i>
-                </div>
-
-                <div>
-                    <i class="ri-moon-line" id="theme-toggle"></i>
-                    
-                    <div id="hamburger">
-                        <i class="ri-menu-2-line"></i>
-                    </div>
                 </div>
             </div>
             <!-- End Navmenu -->
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+                
+                <div id="hamburger" class="lg:hidden">
+                    <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- End Header -->

@@ -1,4 +1,24 @@
-// Toggle Button
+/**
+ * Navbar & Button Toggle
+ */
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+const navCloser = document.getElementById('nav-close');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.add('hidden')
+    });
+});
+
+navCloser.addEventListener('click', () => {
+    navMenu.classList.add('hidden')
+});
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.remove('hidden')
+});
 
 
 
