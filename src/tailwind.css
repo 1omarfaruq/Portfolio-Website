@@ -120,4 +120,25 @@
     .exp_edu_card:hover, .exp_edu_card:hover > p {
         @apply text-whiteColor;
     }
+
+    /* Recent Blogs */
+
+    .blog_card img {
+        @apply w-full duration-300;
+    }
+    .blog_card:hover img {
+        @apply scale-110;
+    }
+    
+    .blog_card div, .blog_card .blog_card_info p  {
+        @apply duration-300;
+    }
+
+    .blog_card:hover .blog_card_info {
+        @apply bg-primaryColorLight text-whiteColor;
+    }
+
+    .blog_card:hover .blog_card_info p {
+        @apply text-whiteColor;
+    }
 }
