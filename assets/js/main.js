@@ -112,6 +112,20 @@ tabs.forEach( (tab) => {
 // Change Background Header
 
 // Show scroll up
+const scrollUp = () => {
+    const scrollUpBtn = document.getElementById('scroll-up');
+    console.log(scrollUpBtn.classList);
+
+    if (this.scrollY >= 250) {
+        scrollUpBtn.classList.remove("-bottom-1/2");
+        scrollUpBtn.classList.add("bottom-4");
+    } else {
+        scrollUpBtn.classList.add("-bottom-1/2");
+        scrollUpBtn.classList.remove("bottom-4");
+    }
+};
+
+window.addEventListener("scroll", scrollUp);
 
 // Scroll sections active link
 
