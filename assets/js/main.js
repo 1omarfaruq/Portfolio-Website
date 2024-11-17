@@ -110,11 +110,37 @@ tabs.forEach( (tab) => {
 
 
 // Change Background Header
+const scrollHeader = () => {
+    const navbar = document.getElementById('navbar');
+    const aTags = document.querySelectorAll("nav ul li a");
+    const themeToggle = document.getElementById("theme-toggle");
+    const hamburger = document.getElementById("hamburger");
+
+
+    if (this.scrollY >= 250) {
+        navbar.classList.add("bg-primaryColor");
+        aTags.forEach((item) => {
+            item.classList.add("text-whiteColor");
+        });
+        themeToggle.classList.add("text-whiteColor");
+        hamburger.classList.add("text-whiteColor");
+    } else {
+        navbar.classList.remove("bg-primaryColor");
+        aTags.forEach((item) => {
+            item.classList.remove("text-whiteColor");
+        });
+        themeToggle.classList.remove("text-whiteColor");
+        hamburger.classList.remove("text-whiteColor");
+    }
+};
+
+window.addEventListener("scroll", scrollHeader);
+
+
 
 // Show scroll up
 const scrollUp = () => {
     const scrollUpBtn = document.getElementById('scroll-up');
-    console.log(scrollUpBtn.classList);
 
     if (this.scrollY >= 250) {
         scrollUpBtn.classList.remove("-bottom-1/2");

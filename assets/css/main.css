@@ -652,6 +652,18 @@ input:focus, input:active, select:focus, select:active, textarea:focus, textarea
   color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
+@media (min-width: 976px){
+  .nav-link{
+    --tw-text-opacity: 1;
+    color: hsl(209 87% 21% / var(--tw-text-opacity));
+  }
+
+  .nav-link:is(.dark *){
+    --tw-text-opacity: 1;
+    color: rgb(221 221 221 / var(--tw-text-opacity));
+  }
+}
+
 .nav-link::before{
   position: absolute;
   bottom: -5px;
@@ -826,6 +838,10 @@ input:focus, input:active, select:focus, select:active, textarea:focus, textarea
   bottom: 0px;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .bottom-\[-100\%\]{
   bottom: -100%;
 }
@@ -880,10 +896,6 @@ input:focus, input:active, select:focus, select:active, textarea:focus, textarea
 
 .top-\[-20\%\]{
   top: -20%;
-}
-
-.bottom-4{
-  bottom: 1rem;
 }
 
 .-z-10{

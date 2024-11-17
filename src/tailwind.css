@@ -20,6 +20,7 @@
     input, select, textarea {
         @apply w-full dark:bg-darkBodyColor border border-gray-800 px-4 py-3 rounded-lg
     }
+    
     input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
         @apply outline-none border-primaryColorLight;
     }
@@ -27,7 +28,7 @@
 
 @layer components {
     .nav-link{
-        @apply relative font-bold text-textColor;
+        @apply relative font-bold text-textColor lg:text-primaryColor dark:lg:text-textColor;
     }
 
     .nav-link::before {
