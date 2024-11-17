@@ -1,5 +1,5 @@
 /**
- * Navbar & Button Toggle
+ * Begin Navbar & Button Toggle
  */
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
@@ -19,7 +19,7 @@ navCloser.addEventListener('click', () => {
 hamburger.addEventListener('click', () => {
     navMenu.classList.remove('hidden')
 });
-
+//End Navbar & Button Toggle
 
 
 /**
@@ -58,7 +58,9 @@ function lightMode() {
 
 
 
-// Tabs
+/**
+ * Begin Recent work tab feltering
+ */
 let tabs = document.querySelectorAll('.tab');
 let indicator = document.querySelector('.indicator');
 const all = document.querySelectorAll('.work_card');
@@ -79,7 +81,7 @@ tabs.forEach( (tab) => {
         tab.classList.add("text-whiteColor"); 
 
         const tabVal = tab.getAttribute("data-tabs");
-        
+
         all.forEach(item => {
             item.style.display = "none";
         });
@@ -103,9 +105,7 @@ tabs.forEach( (tab) => {
         }
     });
 });
-
-
-
+//End Recent work tab feltering
 
 
 
