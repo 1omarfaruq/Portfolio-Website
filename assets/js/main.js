@@ -154,5 +154,28 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp);
 
 // Scroll sections active link
+const activeLink = () => {
+    const sections = documneet.querySelectorAll('section');
+    const navLink = document.querySelector(".nav-link");
+
+    let current = "hero";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+
+        if (this.scrollY >= sectionTop - 60) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLink.forEach(item => {
+        item.classList.remove("active");
+        if (item.href.includes(current)) {
+            item.classList.add("active");
+        }
+    });
+};
+
+window.addEventListener("scroll", activeLink);
 
 // Scroll reveal animation
