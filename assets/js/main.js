@@ -178,4 +178,41 @@ const activeLink = () => {
 
 window.addEventListener("scroll", activeLink);
 
-// Scroll reveal animation
+/**
+ * Begin Scroll reveal animation 
+ */ 
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    durations: 2500,
+    delay: 400
+});
+
+sr.reveal(".hero_image");
+sr.reveal(".hero_content", {origin: "bottom"});
+sr.reveal(".hero_footer", {origin: "bottom", delay: 1200});
+
+sr.reveal(".service_top", {origin: "bottom"});
+sr.reveal(".service-item", {origin: "bottom", interval: 300});
+
+sr.reveal(".recent_top", {origin: "bottom"});
+sr.reveal(".recent_tabs", {origin: "bottom", delay: 800});
+sr.reveal(".work_card", {origin: "bottom", delay: 1000});
+
+sr.reveal(".exp_top", {origin: "top"});
+sr.reveal(".exp_card", {origin: "left", interval: 300});
+sr.reveal(".edu_top", {origin: "top"});
+sr.reveal(".edu_card", {origin: "right", interval: 300});
+
+sr.reveal(".skill-top", {origin: "bottom"});
+sr.reveal(".skill-card", {origin: "bottom", interval: 300});
+
+sr.reveal(".blog-top", {origin: "bottom"});
+sr.reveal(".blog_card", {origin: "bottom", interval: 300});
+
+sr.reveal(".contact-form", {origin: "bottom"});
+sr.reveal(".contact-item", {origin: "bottom", interval: 300});
+
+sr.reveal(".footer", {origin: "top"});
+
+
