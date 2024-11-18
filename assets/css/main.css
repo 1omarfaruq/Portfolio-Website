@@ -1407,6 +1407,11 @@ input:focus, input:active, select:focus, select:active, textarea:focus, textarea
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-primaryColor{
+  --tw-text-opacity: 1;
+  color: hsl(209 87% 21% / var(--tw-text-opacity));
+}
+
 .opacity-5{
   opacity: 0.05;
 }

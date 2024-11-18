@@ -71,6 +71,8 @@ const apps = document.querySelectorAll('.app');
 indicator.style.width = tabs[0].getBoundingClientRect().width + 'px'
 indicator.style.left = (tabs[0].getBoundingClientRect().left - tabs[0].parentElement.getBoundingClientRect().left) + 'px'
 
+tabs[0].classList.add('text-whiteColor');
+
 tabs.forEach( (tab) => {
     tab.addEventListener('click', () => {
         indicator.style.width = tab.getBoundingClientRect().width + 'px'
