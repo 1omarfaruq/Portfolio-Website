@@ -155,8 +155,8 @@ window.addEventListener("scroll", scrollUp);
 
 // Scroll sections active link
 const activeLink = () => {
-    const sections = documneet.querySelectorAll('section');
-    const navLink = document.querySelector(".nav-link");
+    const sections = document.querySelectorAll("section");
+    const navLink = document.querySelectorAll(".nav-link");
 
     let current = "hero";
 
